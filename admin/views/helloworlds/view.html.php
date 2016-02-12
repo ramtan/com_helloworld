@@ -77,6 +77,20 @@ class HelloWorldViewHelloWorlds extends JViewLegacy
 		JToolBarHelper::deleteList('', 'helloworlds.delete');
 		JToolBarHelper::editList('helloworld.edit');
 		JToolBarHelper::addNew('helloworld.add');
+
+		?>
+		<div class="panel">Code : แสดงปุ่ม Delete Edit  New</div>
+			  <div class="well alert-success">
+			  	<pre>
+			    JToolBarHelper::title($title, 'helloworld');
+				JToolBarHelper::deleteList('', 'helloworlds.delete');
+				JToolBarHelper::editList('helloworld.edit');
+				JToolBarHelper::addNew('helloworld.add');
+			  	</pre>
+			  </div>
+
+		<?php
+		
 	}
 
 	/**

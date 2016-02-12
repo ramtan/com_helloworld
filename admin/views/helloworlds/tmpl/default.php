@@ -26,6 +26,14 @@ $listDirn      = $this->escape($this->filter_order_Dir);
 					array('view' => $this)
 				);
 			?>
+			 <div class="panel">แสดง Search box ใช้ Code ชุดนี้</div>
+			  <div class="well alert-success">
+			    JLayoutHelper::render(
+					'joomla.searchtools.default',
+					array('view' => $this)
+				);
+			  </div>
+			</div>
 		</div>
 	</div>
 	<table class="table table-striped table-hover">
