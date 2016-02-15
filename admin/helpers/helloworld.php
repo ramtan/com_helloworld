@@ -40,6 +40,24 @@ abstract class HelloWorldHelper
 			'index.php?option=com_categories&view=categories&extension=com_helloworld',
 			$submenu == 'categories'
 		);
+
+		?>
+
+		<div class="well">
+			<= แสดง Menu ใน Submenu ใช้ Code นี้
+			<pre>
+				// แสดง Tab Menu : Categories ด้านซ้าย
+					JSubMenuHelper::addEntry(
+						JText::_('COM_HELLOWORLD_SUBMENU_CATEGORIES'),
+						'index.php?option=com_categories&view=categories&extension=com_helloworld',
+						$submenu == 'categories'
+					);
+			</pre>
+		</div>
+
+
+		<?php
+
  
 		// Set some global property
 		$document = JFactory::getDocument();
